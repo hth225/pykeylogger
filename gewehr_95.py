@@ -1,0 +1,8 @@
+f = open("text.txt", "a")
+text = input("type")
+f.write(text)
+f.close()
+f = open("text.txt", "r")
+content = f.read()
+content.replace("a", "ㅁ")
+f.close()

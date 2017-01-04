@@ -9,3 +9,176 @@
 lad 
 
 --------------------------------------
+
+[(l down), (l up), (a down), (d down), (a up), (d up), (enter down)]
+
+2017-01-04 15:09:16.018640
+--------------------------------------
+--------------------------------------
+
+lad 
+
+--------------------------------------
+
+
+
+[(l down), (l up), (a down), (d down), (a up), (d up), (enter down)]
+
+2017-01-04 12:38:19.289304
+--------------------------------------
+--------------------------------------
+
+lad 
+
+--------------------------------------
+
+[(l down), (l up), (a down), (d down), (a up), (d up), (enter down)]
+
+2017-01-04 15:09:16.018640
+--------------------------------------
+--------------------------------------
+
+lad 
+
+
+
+--------------------------------------
+
+[(enter up), (ime hangul mode down), (ime hangul mode up), (r down), (r up), (m down), (m up), (f down), (l down), (f up), (l up), (r down), (r up), (h down), (h up), (space down), (space up), (d down), (k down), (d up), (k up), (a down), (n down), (a up), (n up), (e down), (e up), (h down), (h up), (space down), (space up), (d down), (d up), (j down), (j up), (q down), (q up), (t down), (t up), (d down), (j down), (d up), (left shift down), (j up), (t down), (left shift up), (t up), (e down), (e up), (k down), (k up), (enter down)]
+
+2017-01-04 15:09:21.171294
+--------------------------------------
+--------------------------------------
+
+ rmflrh dkaneh djqtdjTek 
+
+--------------------------------------
+
+
+
+[(l down), (l up), (a down), (d down), (a up), (d up), (enter down)]
+
+2017-01-04 12:38:19.289304
+--------------------------------------
+--------------------------------------
+
+lad 
+
+--------------------------------------
+
+[(l down), (l up), (a down), (d down), (a up), (d up), (enter down)]
+
+2017-01-04 15:09:16.018640
+--------------------------------------
+--------------------------------------
+
+lad 
+
+--------------------------------------
+
+
+
+[(l down), (l up), (a down), (d down), (a up), (d up), (enter down)]
+
+2017-01-04 12:38:19.289304
+--------------------------------------
+--------------------------------------
+
+lad 
+
+--------------------------------------
+
+[(l down), (l up), (a down), (d down), (a up), (d up), (enter down)]
+
+2017-01-04 15:09:16.018640
+--------------------------------------
+--------------------------------------
+
+lad 
+
+
+
+--------------------------------------
+
+[(enter up), (ime hangul mode down), (ime hangul mode up), (r down), (r up), (m down), (m up), (f down), (l down), (f up), (l up), (r down), (r up), (h down), (h up), (space down), (space up), (d down), (k down), (d up), (k up), (a down), (n down), (a up), (n up), (e down), (e up), (h down), (h up), (space down), (space up), (d down), (d up), (j down), (j up), (q down), (q up), (t down), (t up), (d down), (j down), (d up), (left shift down), (j up), (t down), (left shift up), (t up), (e down), (e up), (k down), (k up), (enter down)]
+
+2017-01-04 15:09:21.171294
+--------------------------------------
+--------------------------------------
+
+ rmflrh dkaneh djqtdjTek 
+
+
+
+--------------------------------------
+
+[(h down), (h up), (o down), (o up), (w down), (w up), (space down), (space up), (t down), (o down), (t up), (o up), (space down), (space up), (s down), (s up), (o down), (o up), (l down), (l up), (v down), (e down), (v up), (e up), (space down), (space up), (t down), (h down), (t up), (h up), (i down), (i up), (s down), (space down), (s up), (space up), (p down), (p up), (r down), (r up), (o down), (o up), (b down), (b up), (e down), (e up), (l down), (l up), (backspace down), (backspace up), (backspace down), (backspace up), (l down), (l up), (e down), (e up), (m down), (m up), (ime hangul mode down), (ime hangul mode up), (space down), (space up), (a down), (d down), (a up), (d up), (enter down)]
+
+2017-01-04 15:16:09.828233
+--------------------------------------
+
+how to solve this problem  ad 
+
+--------------------------------------
+
+[(enter up), (ime hangul mode down), (ime hangul mode up), (d down), (k down), (d up), (k up), (s down), (l down), (s up), (l up), (enter down)]
+
+2017-01-04 15:16:19.630316
+--------------------------------------
+
+ dksl 
+
+--------------------------------------
+
+[(enter up), (r down), (m down), (r up), (m up), (f down), (j down), (f up), (j up), (g down), (g up), (w down), (l down), (w up), (l up), (enter down)]
+
+2017-01-04 15:16:29.941554
+--------------------------------------
+
+rmfjgwl 
+
+--------------------------------------
+
+[(h down), (o down), (h up), (o up), (w down), (w up), (enter down)]
+
+--------------------------------------
+
+2017-01-04 15:17:47.601442
+--------------------------------------
+
+how 
+
+--------------------------------------
+
+[(enter up), (d down), (d up), (backspace down), (backspace up), (backspace down), (backspace up), (d down), (d up), (backspace down), (backspace up), (backspace down), (backspace up), (p down), (p up), (y down), (y up), (t down), (h down), (t up), (h up), (backspace down), (backspace down), (backspace down), (backspace down), (backspace down), (backspace down), (ime hangul mode down), (backspace up), (ime hangul mode up), (p down), (p up), (y down), (y up), (t down), (h down), (t up), (h up), (o down), (n down), (o up), (n up), (space down), (space up), (d down), (d up), (backspace down), (backspace up), (backspace down), (backspace up), (down down), (down up), (down down), (down up), (enter down)]
+
+--------------------------------------
+
+2017-01-04 15:19:18.006254
+--------------------------------------
+
+ python   
+
+--------------------------------------
+
+[(enter up), (p down), (p up), (y down), (y up), (t down), (h down), (t up), (o down), (h up), (n down), (o up), (n up), (space down), (space up), (backspace down), (backspace up), (g down), (h down), (g up), (h up), (o down), (o up), (s down), (t down), (s up), (t up), (space down), (space up), (s down), (s up), (c down), (c up), (r down), (r up), (e down), (e up), (e down), (e up), (n down), (n up), (space down), (space up), (s down), (h down), (s up), (o down), (h up), (t down), (o up), (t up), (enter down)]
+
+--------------------------------------
+
+2017-01-04 15:21:18.449627
+--------------------------------------
+
+pythonghost screen shot 
+
+--------------------------------------
+
+[(enter up), (left control down), (s down), (s up), (left control up), (left shift down), (k down), (k up), (left shift up), (caps lock down), (caps lock up), (e down), (y down), (e up), (y up), (l down), (o down), (l up), (o up), (g down), (g up), (g down), (g up), (e down), (r down), (e up), (r up), (space down), (space up), (backspace down), (backspace up), (- down), (- up), (backspace down), (backspace up), (left shift down), (- down), (- up), (left shift up), (backspace down), (backspace up), (left shift down), (- down), (left shift up), (- up), (v down), (v up), (e down), (r down), (e up), (r up), (left shift down), (- down), (- up), (left shift up), (1 down), (1 up), (. down), (. up), (0 down), (0 up), (g down), (g up), (i down), (i up), (t down), (t up), (h down), (u down), (h up), (u up), (b down), (b up), (enter down)]
+
+--------------------------------------
+
+2017-01-04 15:33:05.447191
+--------------------------------------
+
+ sKEYLOGGER-VER-1.0GITHUB 
+
+--------------------------------------
