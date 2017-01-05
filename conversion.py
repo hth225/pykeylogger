@@ -1,5 +1,5 @@
-def eng_kr():
-    f = open("LOG.txt", 'r')
+def eng_kr(file_name):
+    f = open(file_name, 'r')
     text = f.read()
     f.close()
     text.replace("q", "ㅂ")
