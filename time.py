@@ -1,9 +1,5 @@
-import datetime
-import time
-
-
-status = time.localtime()
-print(datetime)
-print("      ")
-print(status.tm_min)
-print(status.tm_sec)
+import psutil
+f = open("ps.txt", "w+")
+file = psutil.test()
+f.write(str(file))
+f.close()
