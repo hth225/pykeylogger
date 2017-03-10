@@ -1,1 +1,34 @@
 
+
+[(d down), (d up), (p down), (p up), (backspace down), (backspace up), (backspace down), (ime hangul mode down), (backspace up), (ime hangul mode up), (d down), (p down), (d up), (p up), (f down), (k down), (f up), (k up), (a down), (h down), (a up), (h up), (f down), (m down), (f up), (m up), (r down), (p down), (r up), (p up), (left shift down), (t down), (left shift up), (t up), (e down), (e up), (k down), (k up), (enter down)]
+
+--------------------------------------
+
+2017-03-10 14:00:35.517573
+--------------------------------------
+
+ dpfkahfmrpTek 
+
+--------------------------------------
+
+[(enter up), (d down), (d up), (k down), (k up), (d down), (k down), (d up), (d down), (k up), (d up), (k down), (d down), (k up), (d up), (k down), (d down), (k up), (d up), (k down), (d down), (k up), (d up), (k down), (k up), (enter down)]
+
+--------------------------------------
+
+2017-03-10 14:00:39.399561
+--------------------------------------
+
+dkdkdkdkdkdk 
+
+--------------------------------------
+
+[(enter up), (d down), (d up), (k down), (k up), (d down), (d up), (k down), (k up), (d down), (k down), (d up), (k up), (d down), (d up), (d down), (k down), (d up), (k up), (d down), (k down), (d up), (k up), (d down), (k down), (d up), (k up), (d down), (k down), (d up), (k up), (d down), (k down), (k up), (d up), (k down), (d down), (k up), (d up), (k down), (d down), (k up), (k down), (d up), (k up), (enter down)]
+
+--------------------------------------
+
+2017-03-10 14:00:43.103881
+--------------------------------------
+
+dkdkdkddkdkdkdkdkkdkdk 
+
+--------------------------------------

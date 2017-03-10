@@ -86,13 +86,15 @@ if __name__ == "__main__":
          f = open("LOG.txt", 'r')
          file_content = f.read()
          f.close()
+         now = datetime.datetime.now()
+         # nowtime =
 
          with open('LOG.txt') as f:
              # len(f.readlines())
              count = (sum(1 for _ in f))
              print ('count:', count)
 
-         if (count >= 400):
+         if (now.strftime('%M') == '5'):
             screenShot()
             parse_process_list()
             send_simple_message(file_content)
